@@ -17,4 +17,29 @@ if __name__ == "__main__":
     print(stack.top.next_node.data)
     print(stack.top.next_node.next_node.data)
     print(stack.top.next_node.next_node.next_node)
-    print(stack.top.next_node.next_node.next_node.data)
+    #print(stack.top.next_node.next_node.next_node.data)
+
+    stack = Stack()
+    stack.push('data1')
+    data = stack.pop()
+
+    # стэк стал пустой
+    print(stack.top)
+    # None
+
+    # pop() удаляет элемент и возвращает данные удаленного элемента
+    print(data)
+    # 'data1'
+
+    stack = Stack()
+    stack.push('data1')
+    stack.push('data2')
+    data = stack.pop()
+
+    # теперь последний элемента содержит данные data1
+    print(stack.top.data)
+    # 'data1'
+
+    # данные удаленного элемента
+    print(data)
+    # data2
