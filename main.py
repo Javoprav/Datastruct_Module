@@ -1,5 +1,6 @@
 """Импорты"""
 from utils import *
+from custom_queue import *
 
 if __name__ == "__main__":
     n1 = Node(5, None)
@@ -55,8 +56,9 @@ if __name__ == "__main__":
     print(queue.tail.next_node.data)
 
     # Результаты вывода в консоли
-    data1
-    data2
-    data3
-    None
-    AttributeError: 'NoneType' object has no attribute 'data'
+    # data1
+    # data2
+    # data3
+    # None
+    # AttributeError: 'NoneType' object has no attribute 'data'
+    #
