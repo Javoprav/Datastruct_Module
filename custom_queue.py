@@ -22,3 +22,11 @@ class Queue:
     @property
     def tail(self):
         return self.__tail
+
+    def dequeue(self):
+        """Удаление элемента """
+        if self.__head is None:
+            return None
+        dequeue_element = self.__head
+        self.__head = self.__head.next_node
+        return dequeue_element.data

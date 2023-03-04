@@ -53,7 +53,7 @@ if __name__ == "__main__":
     print(queue.head.next_node.data)
     print(queue.tail.data)
     print(queue.tail.next_node)
-    print(queue.tail.next_node.data)
+    # print(queue.tail.next_node.data)
 
     # Результаты вывода в консоли
     # data1
@@ -61,4 +61,15 @@ if __name__ == "__main__":
     # data3
     # None
     # AttributeError: 'NoneType' object has no attribute 'data'
-    #
+    queue = Queue()
+    queue.enqueue('data1')
+    queue.enqueue('data2')
+    queue.enqueue('data3')
+    print(queue.dequeue())
+    # data1
+    print(queue.dequeue())
+    # data2
+    print(queue.dequeue())
+    # data3
+    print(queue.dequeue())
+    # None
