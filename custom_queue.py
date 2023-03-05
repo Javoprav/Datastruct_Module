@@ -29,4 +29,6 @@ class Queue:
             return None
         dequeue_element = self.__head
         self.__head = self.__head.next_node
+        if self.__head is None:
+            self.__tail = None
         return dequeue_element.data
