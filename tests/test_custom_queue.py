@@ -18,3 +18,4 @@ class TestQueue(unittest.TestCase):
         queue = Queue()
         queue.enqueue('data4')
         self.assertEqual(queue.dequeue(), 'data4')
+

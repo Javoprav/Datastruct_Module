@@ -1,6 +1,7 @@
 """Импорты"""
 from utils import *
 from custom_queue import *
+from linked_list import LinkedList
 
 if __name__ == "__main__":
     n1 = Node(5, None)
@@ -73,3 +74,10 @@ if __name__ == "__main__":
     # data3
     print(queue.dequeue())
     # None
+    ll = LinkedList()
+    ll.insert_beginning({'id': 1})
+    ll.insert_at_end({'id': 2})
+    ll.insert_at_end({'id': 3})
+    ll.insert_beginning({'id': 0})
+    ll.print_ll()
+    # {'id': 0} -> {'id': 1} -> {'id': 2} -> {'id': 3} -> None
