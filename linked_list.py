@@ -4,6 +4,7 @@ from utils import Node
 class LinkedList:
     def __init__(self):
         self.head = None
+        self.nodelist = []
 
     def insert_beginning(self, value) -> None:
         new_node = Node(value)
@@ -30,3 +31,24 @@ class LinkedList:
 
         ll_string += ' None'
         return ll_string
+
+    def to_list(self):
+        if self.head is None:
+            print("Linkedlist пуст")
+        else:
+            current_node = self.head
+            self.nodelist.append(current_node.data)
+            while current_node.next_node is not None:
+                current_node = current_node.next_node
+                self.nodelist.append(current_node.data)
+        return self.nodelist
+
+    def get_data_by_id(self, id):
+        try:
+            for i in self.nodelist:
+                if type(i) == dict and i['id'] == id:
+                    return i
+                # else:
+                #     raise TypeError
+        except TypeError:
+            return 'Данные не являются словарем или в словаре нет id'
