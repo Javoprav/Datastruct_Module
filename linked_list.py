@@ -48,7 +48,8 @@ class LinkedList:
             for i in self.nodelist:
                 if type(i) == dict and i['id'] == id:
                     return i
-                # else:
-                #     raise TypeError
+                else:
+                    print('Данные не являются словарем или в словаре нет id')
+                    continue
         except TypeError:
             return 'Данные не являются словарем или в словаре нет id'
