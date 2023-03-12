@@ -8,3 +8,5 @@ __pycache__/
 *.so
 .cache
 .git
+/venv/
+/.coverage

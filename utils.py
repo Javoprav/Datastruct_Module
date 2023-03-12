@@ -19,7 +19,7 @@ class Stack:
         self.top = new_node
 
     def pop(self):
-        """Добавление элемента """
+        """Удаление элемента """
         remove = self.top
         self.top = self.top.next_node
         return remove.data
